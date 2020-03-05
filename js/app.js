@@ -72,38 +72,45 @@ if (five === 'yes'){
 
 // Question 6 guess number
 var guess = prompt('Please guess a number between 1 and 10');
-var numberGuess = Number(guess);
+// var numberGuess = Number(guess);
 console.log(numberGuess);
 var correct = 6;
 var tries;
 
-for (tries = 0; tries <= 4; tries++){
+for (tries = 1; tries <= 4; tries++){
     console.log(tries);
+    numberGuess = Number (guess);
     if (numberGuess === correct){
         console.log(numberGuess);
         alert('Correct, you must be a mindreader!');
         break;
-    } else if (numberGuess < 6){
-        prompt('too low');
+    } else if (numberGuess < 6 || tries < 4){
+        prompt('too low, guess again');
     } else if (numberGuess > 6){
-        prompt('too high');
+        prompt('too high, guess again');
     }
 }
 
 
-// question 7
-var mammals = prompt('Can you guess the mammals that live in the ocean?');
-var rightAnswer = ['whales', 'dolphins', 'porpoises', 'walruses', 'manatees', 'dugongs', 'seals', 'sea otters']
-var attempts = 6;
+// // question 7
 
-    for (attempts =0; attempts <= 6; attempts++){
-    if (mammals === rightAnswer){
-        console.log(mammals);
-        alert('Great job, you know your mammals!');
-    } else(mammals == []){
-        alert('Wrong, that is not a mammal of the ocean.')
-    }
-}
+// var rightAnswer = ['whales', 'dolphins', 'porpoises', 'walruses', 'manatees', 'dugongs', 'seals', 'sea otters']
+// var attempts = 6;
 
+// for (attempts = 1; attempts <= 6; attempts++) {
+
+//     var mammals = prompt('Can you guess the mammals that live in the ocean?');
+
+//     for (var answerIndex = 0; answerIndex < rightAnswer.length; answerIndex++){
+//         mammals = mammals.toLowerCase
+//         if (mammals == rightAnswer[answerIndex]) {
+//             console.log(mammals);
+//             alert('Great job, you know your mammals!');
+//             break;
+//     }
+//     if (attempts < 6) {
+//         alert('Wrong, that is not a mammal of the ocean.');
+//         }
+// }
 
 alert ('Thanks for playing ' + name + '!');
