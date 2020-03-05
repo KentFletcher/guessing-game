@@ -12,7 +12,7 @@ var one = prompt("Am I from Washington?");
 var one = one.toLowerCase();
 // console.log(one);
     if (one === 'yes'){
-        alert ('No I am not');
+        alert ('No I moved here from PA, but I was born in Florida.');
     }else if (one === 'no'){
         alert ('Thats right!');
     }else {
@@ -25,9 +25,9 @@ var two = prompt("Am I married?");
 var two = two.toLowerCase();
 // console.log(two);
 if (two === 'yes'){
-    alert ('Thats right!');
+    alert ('Thats right!  I have a wonderful wife named Marina!');
 }else if (two === 'no'){
-    alert ('Wrong I am');
+    alert ('Wrong I am!');
 }else {
     two = prompt ('Please answer yes or no');
 }
@@ -37,7 +37,7 @@ var three = prompt("Do I like to travel?");
 var three = three.toLowerCase();
 // console.log(three);
 if (three === 'yes'){
-    alert ('Thats right!');
+    alert ('Thats right I love to get outside and see the world!');
 }else if (three === 'no'){
     alert ('Wrong I love it!');
 }else {
@@ -49,7 +49,7 @@ var four = prompt("Do I ski?");
 var four = four.toLowerCase();
 // console.log(four);
 if (four === 'yes'){
-    alert ('No I snowboard!');
+    alert ('Nope I prefer to snowboard!');
 }else if (four === 'no'){
     alert ('Correct I love to snowboard!');
 }else {
@@ -62,12 +62,48 @@ var five = prompt("Do I have a bachelors degree?");
 var five = five.toLowerCase();
 // console.log(five);
 if (five === 'yes'){
-    alert ('I do!');
+    alert ('I do, in Business!');
 }else if (five === 'no'){
-    alert ('Wrong I do');
+    alert ('Wrong I do in Business');
 }else {
     five = prompt ('Please answer yes or no');
 }
 
 
-alert ('Thanks for playing ' + name + '');
+Question 6 guess number
+var guess = prompt('Please guess a number between 1 and 10');
+var numberGuess = Number(guess);
+console.log(numberGuess);
+var correct = 6;
+var tries;
+
+for (tries = 0; tries <= 4; tries++){
+    console.log(tries);
+    if (numberGuess === correct){
+        console.log(numberGuess);
+        alert('Correct, you must be a mindreader!');
+        break;
+    } else if (numberGuess < 6){
+        prompt('too low');
+    } else if (numberGuess > 6){
+        prompt('too high');
+    }
+}
+
+
+
+var mammals = prompt('Can you guess the mammals that live in the ocean?');
+var rightAnswer = ['whales', 'dolphins', 'porpoises', 'walruses', 'manatees', 'dugongs', 'seals', 'sea otters']
+var attempts = 6;
+
+    for (attempts =0; attempts <= 6; attempts++){
+    if (mammals === rightAnswer){
+        console.log(mammals);
+        alert('Great job, you know your mammals!');
+    } else(mammals == []){
+        alert('Wrong, that is not a mammal of the ocean.')
+    }
+}
+
+
+alert ('Thanks for playing ' + name + '!');
