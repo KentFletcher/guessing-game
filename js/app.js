@@ -73,7 +73,7 @@ if (five === 'yes'){
 // Question 6 guess number
 var guess = prompt('Please guess a number between 1 and 10');
 // var numberGuess = Number(guess);
-console.log(numberGuess);
+// console.log(numberGuess);
 var correct = 6;
 var tries;
 
