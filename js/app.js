@@ -70,7 +70,7 @@ if (five === 'yes'){
 }
 
 
-Question 6 guess number
+// Question 6 guess number
 var guess = prompt('Please guess a number between 1 and 10');
 var numberGuess = Number(guess);
 console.log(numberGuess);
@@ -91,7 +91,7 @@ for (tries = 0; tries <= 4; tries++){
 }
 
 
-
+// question 7
 var mammals = prompt('Can you guess the mammals that live in the ocean?');
 var rightAnswer = ['whales', 'dolphins', 'porpoises', 'walruses', 'manatees', 'dugongs', 'seals', 'sea otters']
 var attempts = 6;
