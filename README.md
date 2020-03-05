@@ -9,3 +9,7 @@ Used a css reset created by Eric Meyer:
    v2.0 | 20110126
    License: none (public domain)
 */
+
+
+### Volha Charnysh - driver
+### Kent Sheats - navigator 
