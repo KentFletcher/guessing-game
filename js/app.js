@@ -25,13 +25,13 @@ function getRandomInt(max) {
 }
 
 function answerQuestions(question, rightAnswer) {
-  var usersUnswer = prompt(question);
-  if (usersUnswer === rightAnswer[0] || usersUnswer === rightAnswer[1]) {
-    //console.log('You are right!');
+  var usersAnswer = prompt(question).toLowerCase();
+  if (usersAnswer === rightAnswer[0] || usersAnswer === rightAnswer[1]) {
+    console.log('You are right!');
     alert ('You are right!');
     score = score + 1;
   } else {
-    //console.log('Thats wrong!');
+    console.log('Thats wrong!');
     alert ('Thats wrong!');
   }
 }
@@ -58,7 +58,7 @@ function checkRightNumber(index, numberGuess, expectedNumber) {
     alert('too high, guess again. . It was attempt number ' + (index + 1));
   } else if (numberGuess === expectedNumber) {
     console.log(numberGuess);
-    alert('Correct, you must be a mindreader!');
+    alert('Correct, you must be a mind reader!');
     return true;
   }
 }
